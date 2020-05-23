@@ -1,0 +1,5 @@
+1.def Fahernheit(x:Double):Double=x*1.8+32.00
+
+2.def VolumeSphere(x:Double):Double=(4.00/3.00)*math.Pi*x*x*x
+
+3.def TotalPrice(x:Int):Double=((0.4)*24.95)*x+(x-50)*.75+3
