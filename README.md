@@ -1,1 +1,1 @@
-#Fucnctional Programming Assignment 1
+#Fucnctional Programming Assignments

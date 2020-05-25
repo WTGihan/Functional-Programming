@@ -1,0 +1,11 @@
+1. def WorkCost(x:Int)=x*150
+   def OTCost(x:Int)=x*75
+   def TotalIncom(x:Int,y:Int)=WorkCost(x)+OTCost(y)
+   def Tax(x:Double)=x*.1
+   def TakeHomeSalary(x:Int,y:Int)=TotalIncom(x,y)-Tax(TotalIncom(x,y))
+
+
+2. def Attendence(x:Int)=120+(15-x)/5*20
+   def totalIncom(x:Int)=Attendence(x)*x
+   def totalOutCome(x:Int)=500+Attendence(x)*3
+   def TotalProfit(x:Int)=totalIncom(x)-totalOutCome(x)
