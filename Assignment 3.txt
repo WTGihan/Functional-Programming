@@ -1,0 +1,51 @@
+1. def GCD(x:Int,y:Int):Int= y match {
+       case 0 => x
+       case y if (y>x) => GCD(y,x)
+       case _ => GCD(y,x%y)
+       }
+
+   def prime(p:Int,n:Int=2):Boolean= n match{
+       case x if(p==x) => true
+       case x if(GCD(p,x)>1) => false
+       case x => prime(p,x+1)
+       }
+
+2.def primeSeq(n:Int):Any ={
+      if(prime(n)==true) println(n)
+      if(n>0) primeSeq(n-1)  
+   }
+
+3. def sum(n:Int):Int={
+       if(n==1) 1
+       else n+sum(n-1)
+       }
+
+4.object EvenOdd extends App{
+	 def isEven(n:Int):Boolean = n match {
+		 case 0 => true
+		 case _ => isOdd(n-1)
+	 }
+
+
+    def isOdd(n:Int):Boolean= !(isEven(n))
+
+    println(isEven(4))
+
+  }     
+
+ 5. def evenSum(n:Int):Int = n match{
+      case 2 => 2
+      case n if(isEven(n)==true) => n+evenSum(n-1)
+      case _ =>evenSum(n-1)
+      }
+ 
+ 6. def fibonacci(n:Int):Int = n match{
+       case n if n==0 => 0
+       case n if n==1 => 1
+       case n => fibonacci(n-1)+fibonacci(n-2)
+       }
+
+    def fibbSeq(n:Int):Any ={
+       if(n>0) fibbSeq(n-1)
+       println(fibonacci(n))
+       }
